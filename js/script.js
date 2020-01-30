@@ -10,6 +10,7 @@ $(document).ready(function() {
       success: function (data, state) {
         console.log(data);
         var number = data.response;
+        selection.append(number);
         if (number <= 5) {
           selection.addClass('yellow');
         } else {
