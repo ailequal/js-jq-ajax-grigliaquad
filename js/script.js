@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+  for (var i = 0; i < 35; i++) {
+    var box = $('.template .box').clone();
+    $('.container').append(box);
+  }
+
   $(document).on('click', '.box', function() {
 
     var selection = $(this);
